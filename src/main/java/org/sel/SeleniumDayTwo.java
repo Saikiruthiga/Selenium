@@ -32,6 +32,12 @@ public class SeleniumDayTwo {
 		
 		// Xpath always having "//" in its syntax. whereas css selector doesn't have.
 		// css selector index ---> syntax : nth - child(2)
+		driver.findElement(By.xpath("//div[@class = 'forgot-pwd-btn-conainer']/button[1]")).click();
+		driver.findElement(By.cssSelector("input[placeholder = 'Username']")).sendKeys("Selenium");
+		driver.findElement(By.cssSelector("input[type*= 'pass']")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.xpath("//label[text() = ' Remember my username']")).click();
+		driver.findElement(By.cssSelector("#chkboxTwo")).click();
+		driver.findElement(By.xpath("//button[text() ='Sign In' ]")).click();
 		
 		
 		
