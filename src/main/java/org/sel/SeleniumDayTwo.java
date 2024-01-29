@@ -35,6 +35,7 @@ public class SeleniumDayTwo {
 		driver.findElement(By.xpath("//div[@class = 'forgot-pwd-btn-conainer']/button[1]")).click();
 		driver.findElement(By.cssSelector("input[placeholder = 'Username']")).sendKeys("Selenium");
 		driver.findElement(By.cssSelector("input[type*= 'pass']")).sendKeys("rahulshettyacademy");
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//label[text() = ' Remember my username']")).click();
 		driver.findElement(By.cssSelector("#chkboxTwo")).click();
 		driver.findElement(By.xpath("//button[text() ='Sign In' ]")).click();
